@@ -13,7 +13,7 @@
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
         span 1
-      h1#t_1_1 Fundamentos de React JS
+      h1#t_1 Fundamentos de React JS
     p.mb-5 React JS, es una nueva tecnología importante para la construcción de software en su componente Front-End, que requiere tener en cuenta algunas consideraciones, se pueden ver a continuación:
 
     .row.justify-content-center.py-5.bg-carousel-1
@@ -22,55 +22,55 @@
           .tarjeta.color-acento-botones.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+                img(src='@/assets/imagenes/tema1/imagen_t_1_carousel_img_1.svg' alt='AvatarTop')
             h2.text-center ¿Qué es?
             p.text-center Es una nueva tecnología, de reciente desarrollo, que se relaciona con una librería o biblioteca.
 
           .tarjeta.color-acento-botones.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+                img(src='@/assets/imagenes/tema1/imagen_t_1_carousel_img_2.svg' alt='AvatarTop')
             h2.text-center ¿En qué se basa?
             p.text-center Trabaja sobre componentes principalmente.
           
           .tarjeta.color-acento-botones.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+                img(src='@/assets/imagenes/tema1/imagen_t_1_carousel_img_3.svg' alt='AvatarTop')
             h2.text-center  ¿Cuál es su propósito?
             p.text-center Inicialmente fue pensada para solucionar el problema de interfaces que estas actualizando información constantemente. La mayoría de las aplicaciones usadas en la actualidad, actualizan información a cada momento, mediante nuevos comentarios, notificaciones, publicaciones imágenes, etc.
 
           .tarjeta.color-acento-botones.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+                img(src='@/assets/imagenes/tema1/imagen_t_1_carousel_img_4.svg' alt='AvatarTop')
             h2.text-center ¿Quién la creo?
             p.text-center Fue creada por originalmente por Facebook, y hoy en día es una de las librerías más populares que existen para página web y Front-End.
           
           .tarjeta.color-acento-botones.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+                img(src='@/assets/imagenes/tema1/imagen_t_1_carousel_img_5.svg' alt='AvatarTop')
             h2.text-center ¿Cómo trabaja?
             p.text-center Trabaja mediante una librería de JS, una librería es una colección de procesos almacenados en objetos o módulos, es decir, códigos que aceleran el flujo de trabajo, pues consiste en reciclar algo, que antes ya alguien ha creado.
 
           .tarjeta.color-acento-botones.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+                img(src='@/assets/imagenes/tema1/imagen_t_1_carousel_img_6.svg' alt='AvatarTop')
             h2.text-center Requisitos
             p.text-center Es necesario tener un lenguaje para escribir el código, además que esta diseñada para automatizar, mejorar, y acelerar el proceso de desarrollo.
 
           .tarjeta.color-acento-botones.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+                img(src='@/assets/imagenes/tema1/imagen_t_1_carousel_img_7.svg' alt='AvatarTop')
             h2.text-center Antes de empezar
             p.text-center Se recomienda tener conocimientos de Java Script, HTML y XML, para un mejor manejo de esta tecnología.
 
     //- Tema 1.1
     .titulo-segundo.color-acento-contenido.my-5
-      h2#t_1_2 1.1  ¿Qué es React JS?
+      h2#t_1_1 1.1  ¿Qué es React JS?
 
     .container-imagen-t-1-2
       img(src='@/assets/imagenes/tema1/imagen_t_1_1.png', alt='')
@@ -79,7 +79,7 @@
 
     //- Tema 1.2
     .titulo-segundo.color-acento-contenido.my-5
-      h2#t_1_3 1.2. ¿Qué es JSX?
+      h2#t_1_2 1.2. ¿Qué es JSX?
 
     #bloque-t-1-3.bloque-texto-g
       .bloque-texto-g__img(
@@ -93,7 +93,7 @@
     //- Tema 1.3
     .container_t_1_3
       .titulo-segundo.color-acento-contenido.my-5
-        h2#t_1_4 1.3 Instalando React JS
+        h2#t_1_3 1.3 Instalando React JS
 
       div.container-imagen-t-1-4
         div.col-12.col-md-6.pe-4
@@ -166,6 +166,107 @@
           p Por último de clic en finish para terminar la instalación.
           img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_8.png').col-12.col-md-7.pb-4
 
+    //- Tema 1.4
+    .titulo-segundo.color-acento-contenido.my-5
+      h2#t_1_4 1.4 Crear un proyecto
+    div.d-flex.flex-wrap
+      .col-12.col-md-6.order-2.order-md-1
+        p Una vez llevado a cabo el proceso de instalación del paso anterior de node y npm, se puede crear el proyecto React e ir ejecutando los siguientes comandos:
+        div.container-commands-t_1_4
+          p 1. npx create-react-app my-app 
+            br
+            | 2. cd my-app
+            br
+            | 3. npm start
+        p Iniciar a la creación del proyecto, mediante la siguiente secuencia:
+      .col-12.col-md-6.order-1.order-md-2
+        img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_1.png').mb-4.ps-0.ps-md-3
+    ImagenInfograficaB.color-primario.mb-5.img-install-node
+      template(v-slot:imagen)
+        figure
+          img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_2.png', alt='Pasos para crear un proyecto en Node js')
+
+      div(x="11%" y="48%" tooltip="Crear un comando ubuntu" numero="1")
+        h5 Crear un comando ubuntu
+        p Desde línea de comando Ubuntu ejecute npx create-react-app my-app
+        img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_interactive_1.png')
+
+      div(x="26.2%" y="76%" tooltip="Ejecución de npx create-react-app my-app" numero="2")
+        h5 Ejecución de npx create-react-app my-app
+        p Una vez el sistema termine la ejecución del paso anterior ejecute cd my-app 
+        img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_interactive_2.png')
+      
+      div(x="42%" y="48%" tooltip="Ejecute npm start para lanzar el proyecto" numero="3")
+        h5 Ejecute npm start para lanzar el proyecto
+        p Dentro de la carpeta ejecute npm start para lanzar el proyecto
+        img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_interactive_3.png')
+
+      div(x="58%" y="76%" tooltip="Proyecto React" numero="4")
+        h5 Proyecto React
+        p El sistema lanza el primer proyecto React en el navegador como lo muestra la siguiente imagen.
+        img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_interactive_4.png')
+
+      div(x="73.7%" y="48%" tooltip="Ejecute npm start para lanzar el proyecto" numero="5")
+        h5 Ejecute npm start para lanzar el proyecto
+        p Una vez finalizado la creación del proyecto, usted deberá revisar que la estructura del proyecto react, este conformada del siguiente conjunto de carpetas y archivos
+        img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_interactive_5.png')
+      
+      div(x="89%" y="76%" tooltip="Ejecute npx create-react-app my-app" numero="6")
+        h5 Ejecute npx create-react-app my-app
+        p Desde línea de comando Windows ejecute npx create-react-app my-app
+        img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_interactive_6.png')
+
+    //- Tema 1.5 y Tema 1.6
+    .container_t_1_n5_y_n6
+      //- Tema 1.5
+      .titulo-segundo.color-acento-contenido.my-5
+        h2#t_1_5 1.5 Propiedades y Estados de los Componentes
+      p Un componente en React hace referencia a la posibilidad de definir de manera independiente una funcionalidad que puede ser re-utilizable dentro del sistema, en esencia estas funcionalidades se escriben a manera de funciones JavaScript que reciben unas entradas que se denominan propiedades y devuelven una forma de visualización. 
+      br
+      p Ejemplo de un componente denominado Bienvenido que recibe una propiedad y devuelve un párrafo de saludo.
+      img(src='@/assets/imagenes/tema1/imagen_t_1_5_img_1.png').img-primary
+      .col-12.col-md-10.d-flex.flex-wrap.mx-auto
+        .col-12.col-md-6.bg-container-t_1_5
+          p Además, a un componente se le puede aplicar el concepto de estado en donde este, se define como la capacidad de especificar variables que pueden cambiar su valor en el tiempo, convirtiéndose en un comportamiento interno del componente, estos componentes se definen con el nombre de clase con la palabra reservada class.
+        .col-12.col-md-6
+          img(src='@/assets/imagenes/tema1/imagen_t_1_5_img_2.png')
+      
+      //- Tema 1.6
+      .titulo-segundo.color-acento-contenido.my-5
+        h2#t_1_6 1.6 Eventos en React
+      p Los eventos en React se manejan semejante a los del DOM se le pasa una función al controlador del evento.
+      
+      img(src='@/assets/imagenes/tema1/imagen_t_1_6_img_1.png').pb-5
+    Separador
+
+    //- Tema 1.7
+    .titulo-segundo.color-acento-contenido.my-5
+      h2#t_1_7 1.7 Listas y keys
+    p.mb-5.pb-4 Las listas hacen referencia a un arreglo de datos, que bien puede ser un arreglo de objetos o de datos simples con carácteres, números, etc. Como toda lista en programación, React proporciona un método para extraer estos datos y mostrarlos en la página en la cual se está trabajando, a continuación se presenta cómo se hace:
+    .container_t_1_7
+      ImagenInfograficaB.color-primario.mb-5.img-t_1_7
+        template(v-slot:imagen)
+          figure
+            img(src='@/assets/imagenes/tema1/imagen_t_1_7.png', alt='Pasos para crear un proyecto en Node js')
+
+        div(x="10%" y="75%" tooltip="Listas y keys JS" numero="").content-infografia_t_1_7
+          p En React es necesario pasar arreglos de datos a listas para el manejo de algunos componentes lo cual se trabaja con la función map de la siguiente manera en donde se devuelve un elemento < li > por cada número.
+          img(src='@/assets/imagenes/tema1/imagen_t_1_7_img_interactive_1.png')
+
+        div(x="90%" y="75%" tooltip="Listas y keys JSX" numero="").content-infografia_t_1_7
+          p Adicional al manejo de listas es muy importante tener en cuenta el identificador único de componentes para evitar errores en el DOM por lo tanto es necesario manejar el atributo key.
+          img(src='@/assets/imagenes/tema1/imagen_t_1_7_img_interactive_2.png')
+    Separador
+
+    //- Tema 1.8
+    .titulo-segundo.color-acento-contenido.my-5
+      h2#t_18 1.8 Formularios
+
+    .col-12.container-t_1_8
+      .col-12.col-md-6
+        img(src='@/assets/imagenes/tema1/imagen_t_1_5_img_2.png').mb-4.mb-md-0
+      .col-12.col-md-6.bg-container-t_1_8
+        p Además, a un componente se le puede aplicar el concepto de estado en donde este, se define como la capacidad de especificar variables que pueden cambiar su valor en el tiempo, convirtiéndose en un comportamiento interno del componente, estos componentes se definen con el nombre de clase con la palabra reservada class.
 </template>
 
 <script>
@@ -315,4 +416,108 @@ export default {
   .container_t_1_3 .carousel_t_1_3 .item-carousel_t_1_3 p
     padding: 1rem
     text-align: center
+.container-commands-t_1_4
+  background-color: #FCEAB3
+  position: relative
+  width: 80%
+  max-width: 340px
+  margin-right: auto
+  margin-left: auto
+  ::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    height: 8px
+    width: 24px
+    background-color: #FFCA28
+  p
+    padding: 1rem 2rem
+.img-install-node
+  width: calc(100% + 6rem)
+  position: relative
+  left: -3rem
+  .img-infografica-b__modal
+    background-color: #12263F
+  @media (max-width: 768px)
+    left: -1.5rem
+    width: calc(100% + 3rem)
+.container_t_1_n5_y_n6
+  margin-left: -3rem
+  margin-right: -3rem
+  padding-right: 3rem
+  padding-left: 3rem
+  background: linear-gradient(1deg, #4dd0e136, transparent)
+  .img-primary
+    max-width: 945px
+    margin-right: auto
+    margin-left: auto
+    padding-top: 1.5rem
+    padding-bottom: 2rem
+  .bg-container-t_1_5
+    background-color: #039BE5
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    p
+      color: white
+      padding: 2rem
+      margin-bottom: 0
+  @media (max-width: 768px)
+    margin-left: -1.5rem
+    margin-right: -1.5rem
+    padding-right: 1.5rem
+    padding-left: 1.5rem
+.container_t_1_7
+  background-image: url('../assets/imagenes/tema1/container-imagen_t_1_7.png')
+  background-position: top
+  background-repeat: no-repeat
+  margin-left: -3rem
+  margin-right: -3rem
+  margin-top: 5rem
+  .img-infografica-b
+    max-width: 686px
+    margin-left: auto
+    margin-right: auto
+
+  img
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    top: -3.5rem
+  .img-t_1_7
+    position: relative
+    top: -3.5rem
+    color: #12263F
+    img
+      top: 0
+      max-height: 526px
+      max-width: 686px
+    .img-infografica-b__modal
+      background-color: #F4FDFF
+    .content-infografia_t_1_7
+      margin-right: auto
+      margin-left: auto
+    .content-infografia_t_1_7 p, .img-infografica-b__modal__btn-cerrar i
+      color: #12263F !important
+  .img-t_1_7.img-infografica-b--open
+    max-width: 100%
+    max-height: 526px !important
+  @media (max-width: 768px)
+    margin-left: -1.5rem
+    margin-right: -1.5rem
+    .img-t_1_7 .content-infografia_t_1_7
+      width: 100%
+.container-t_1_8
+  background-color: #1565C0
+  display: flex
+  flex-wrap: wrap
+  .bg-container-t_1_8
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    p
+      color: white
+      padding: 2rem
 </style>
