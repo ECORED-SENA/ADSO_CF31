@@ -74,21 +74,45 @@ export default {
             titulo: 'Formularios',
             hash: 't_1_8',
           },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.9',
+            titulo: 'Concepto de clases en React',
+            hash: 't_1_9',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.10',
+            titulo: 'Funciones Hooks',
+            hash: 't_1_10',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.11',
+            titulo: 'Ciclos de Vida de los Componentes de React',
+            hash: 't_1_11',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.12',
+            titulo: 'Ejecutar la aplicación',
+            hash: 't_1_12',
+          },
         ],
       },
     ],
     subMenu: [
-      {
-        icono: 'fas fa-sitemap',
-        titulo: 'Sintesis',
-        nombreRuta: 'sintesis',
-      },
-      {
-        nombreRuta: 'actividad',
-        icono: 'far fa-question-circle',
-        titulo: 'Actividad didáctica',
-        desarrolloContenidos: true,
-      },
+      // {
+      //   icono: 'fas fa-sitemap',
+      //   titulo: 'Sintesis',
+      //   nombreRuta: 'sintesis',
+      // },
+      // {
+      //   nombreRuta: 'actividad',
+      //   icono: 'far fa-question-circle',
+      //   titulo: 'Actividad didáctica',
+      //   desarrolloContenidos: true,
+      // },
       {
         nombreRuta: 'glosario',
         icono: 'fas fa-sort-alpha-down',
@@ -118,31 +142,81 @@ export default {
   },
   referencias: [
     {
+      referencia: 'Node. (2021). Node JS Server.',
+      link: 'https://nodejs.org/en/',
+    },
+    {
       referencia:
-        'Zlackman, C. (2012). 100 años de moda. Sistema de Bibliotecas SENA:',
-      link:
-        'https://sena-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=sena_aleph000060086&vid=SENA&search_scope=sena_completo&tab=sena_completo&lang=es_ES&context=L',
+        'React JS. (2021). React – A JavaScript library for building user interfaces. Biblioteca de React.',
+      link: 'https://reactjs.org/',
     },
   ],
   glosario: [
     {
-      termino: 'MoodBoard',
+      termino: 'CSS3',
+      significado: 'Hojas de estilo en cascada versión 3.',
+    },
+    {
+      termino: 'DOM',
+      significado: 'Modelo de objetos de un documento HTML',
+    },
+    {
+      termino: 'ES6',
+      significado: 'Abreviación del estándar ECMA SCRIPT. Versión 6.',
+    },
+    {
+      termino: 'FRONTEND',
       significado:
-        'su traducción literal es mapa de inspiración y aunque su uso está muy asociado al ámbito de la decoración de interiores o la moda, <br/>realmente se utiliza en entornos creativos muy diversos, desde el diseño de productos o servicios al audiovisual o el diseño gráfico.',
+        'Se refiere a la capa de presentación de una aplicación web.',
+    },
+    {
+      termino: 'HTML',
+      significado: 'Lenguaje de marcado hipertexto.',
+    },
+    {
+      termino: 'JAVASCRIPT',
+      significado: 'Lenguaje de programación.',
+    },
+    {
+      termino: 'JSX',
+      significado:
+        'Sintaxis propuesta en React JS para escribir elementos de interfaz web.',
+    },
+    {
+      termino: 'NODE.js',
+      significado: 'Es un servidor de aplicaciones.',
+    },
+    {
+      termino: 'NPM',
+      significado: 'Es un manejador de paquetes de sistema operativo.',
+    },
+    {
+      termino: 'SPA',
+      significado: 'Tipo de aplicación Web.',
     },
   ],
   complementario: [
     {
       texto:
-        'BIC., (2015). “2 minutos para entender el desarrollo sostenible – Spanish”',
-      tipo: 'Video',
-      link: 'https://www.google.com/',
+        'Editor HTML gratuito en línea, limpiador y convertidor. (2021, 27 de octubre). [Página web].',
+      tipo: 'Página web.',
+      link: 'https://htmled.it/or/',
+    },
+    {
+      texto: 'Cubic Factory.  (2021, 27 de octubre). [Página web].',
+      tipo: 'Página web.',
+      link: 'https://www.cubicfactory.com/jseditor/',
     },
     {
       texto:
-        'Arnold, M. y Osorio, F., (1998). Introducción a los conceptos básicos de la Teoría general de sistemas. Cinta moebio 3: 40-49',
-      tipo: 'Página web',
-      descarga: '/downloads/prueba.pdf',
+        'CodeSandbox: Online Code Editor and IDE for Rapid Web Development. (2021, 27 de octubre). [Página web].',
+      tipo: 'Página web.',
+      link: 'https://codesandbox.io',
+    },
+    {
+      texto: 'React Playground. (2021, 27 de octubre). [Página web].',
+      tipo: 'Página web.',
+      link: 'https://playcode.io/react/',
     },
   ],
   creditos: {

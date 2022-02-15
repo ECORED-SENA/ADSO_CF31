@@ -260,13 +260,109 @@
 
     //- Tema 1.8
     .titulo-segundo.color-acento-contenido.my-5
-      h2#t_18 1.8 Formularios
+      h2#t_1_8 1.8 Formularios
 
     .col-12.container-t_1_8
       .col-12.col-md-6
         img(src='@/assets/imagenes/tema1/imagen_t_1_5_img_2.png').mb-4.mb-md-0
       .col-12.col-md-6.bg-container-t_1_8
         p Además, a un componente se le puede aplicar el concepto de estado en donde este, se define como la capacidad de especificar variables que pueden cambiar su valor en el tiempo, convirtiéndose en un comportamiento interno del componente, estos componentes se definen con el nombre de clase con la palabra reservada class.
+    Separador
+
+    //- Tema 1.9
+    .titulo-segundo.color-acento-contenido.my-5
+      h2#t_1_9 1.9 Concepto de clases en React
+    p.mb-4.mb-md-0 Las clases son otra forma de definir un componente en React se caracterizan por tener propiedades y a diferencia de las funciones pueden definir estados propios sin utilizar el concepto de Hook; dentro de los componentes de clase existe una función constructora que se utiliza para definir el estado inicial del componente. Es muy importante llamar a la función super() dentro del constructor para que los parámetros funcionen adecuadamente, como puede verse en la siguiente imagen:
+    div.container_t_1_9
+      img(src='@/assets/imagenes/tema1/imagen_t_1_9_1.png')
+      .decorator_t_1_9
+        p Explorar el siguiente recurso y conocer los aspectos más relevantes relacionados con el concepto de clases en React:
+    .row
+      .col-12.col-md-7.mb-5.mb-md-0.container_line_time_t_1_9.order-2.order-md-1
+        LineaTiempoD.color-primario
+          p.text-small(numero="1" titulo="Componentes ") Los componentes permiten separar la interfaz de usuario en piezas independientes, reutilizables y pensar en cada pieza de forma aislada.
+          
+          p.text-small(numero="2" titulo="React") React le permite definir componentes como clases o funciones. Los componentes definidos como clases actualmente proporcionan una serie de características extra 
+          
+          p.text-small(numero="3" titulo="La función super()") La función super() dentro del constructor, es un componente de React válido porque acepta un solo argumento de objeto “props” (que proviene de propiedades) con datos y devuelve un elemento de React. Llamamos a dichos componentes “funcionales” porque literalmente son funciones JavaScript.
+          
+          p.text-small(numero="4" titulo="Nombres de componentes") Comience siempre los nombres de componentes con una letra mayúscula.
+            br
+            br
+            | React trata los componentes que empiezan con letras minúsculas como etiquetas del DOM. Por ejemplo, < div /> representa una etiqueta div HTML pero < Welcome /> representa un componente y requiere que Welcome esté definido.
+      .col-12.col-md-5.px-5.order-1.order-md-2
+        img(src='@/assets/imagenes/tema1/imagen_t_1_9_2.png').mb-4
+
+    //- Tema 1.10
+    .titulo-segundo.color-acento-contenido.my-5
+      h2#t_1_10 1.10 Funciones Hooks
+    p Es el concepto que permite darle a los componentes definidos por medio de funciones manejo de variables de estado locales, así como lo hacen las clases.
+      br
+      br
+      | Los Hooks son funciones JavaScript e imponen dos reglas:
+    .container_t_1_10
+      img(src='@/assets/imagenes/tema1/imagen_t_1_10_1.png')
+      p.mb-0 Ejemplo de una función que utiliza el Hook useState
+    .d-flex.flex-wrap.mt-5
+      img(src='@/assets/imagenes/tema1/imagen_t_1_10_2.png').col-12.col-md-6.px-0.order-2.order-md-1
+      img(src='@/assets/imagenes/tema1/imagen_t_1_10_3.png').col-12.col-md-6.px-0.order-1.order-md-2
+    Separador
+
+    //- Tema 1.11
+    .titulo-segundo.color-acento-contenido.my-5
+      h2#t_1_11 1.11 Ciclos de Vida de los Componentes de React
+
+    .tabla-b.color-acento-contenido.mb-5
+      .tabla-b__header
+        p.mb-0 Métodos de ciclo de vida de React
+      table
+        thead
+          tr
+            th Nombre del Método
+            th Utilidad
+        tbody
+          tr
+          tr
+            td componentWillMount()
+            td Se ejecuta justo antes del primer pintado del componente.
+          tr
+            td componentDidMount()
+            td Se ejecuta después del primer pintado del componente.
+          tr
+            td componentWillReceiveProps(nextProps)
+            td Se invoca cuando las propiedades se van a actualizar.
+          tr
+            td shouldComponentUpdate(nextProps, nextState)
+            td Se invocará cuando se producen cambios de propiedades o cambios de estado.
+          tr
+            td componentWillUpdate(nextProps, nextState)
+            td Este se invocará justo antes de que el componente vaya a actualizar su vista.
+          tr
+            td componentDidUpdate(prevProps, prevState)
+            td Este se invocará justo después de que el componente vaya a actualizar su vista.
+          tr
+            td componentWillUnmount()
+            td Se ejecuta en el momento que el componente se va a retirar del DOM.
+
+    p.py-4 Se puede observar en la siguiente imagen cómo quedará el archivo:
+    .container_t_1_11
+      img(src='@/assets/imagenes/tema1/imagen_t_1_11_1.png').mb-5
+      button(@click="modal_t_11 = true") ATENCIÓN
+    ModalA(:abrir-modal.sync="modal_t_11")
+      .row.align-items-center
+        .col-12.modal_t_11
+          p En React.js los componentes que no sean puros (todos los que se crean mediante clases o React.createClass) poseen algo conocido como el ciclo de vida. Este ciclo de vida, son una serie de funciones que se ejecutan en distintos momentos de la vida del componente y nos permiten realizar distintas acciones en estos momentos.
+    p.pt-5 Las utilidades del método de ciclo de vida de React, pueden ser detalladas a continuación: 
+
+    //- Tema 1.12
+    .titulo-segundo.color-acento-contenido.my-5
+      h2#t_1_12 1.12 Ejecutar la aplicación
+    p.mb-5 Para ejecutar una aplicación React JS, se usa el comando npm start y para generar la versión de producción se debe ejecutar el siguiente comando npm run build.
+    img(src='@/assets/imagenes/tema1/imagen_t_1_12_1.png').img_t_1_12_1
+    p Este comando genera la carpeta build con la versión compilada y minificada del proyecto React SPA (Single Page Aplication), a continuación, se observará cómo debe quedar la organización y registro de éste proceso.
+    .d-flex.flex-wrap.mt-5
+      img(src='@/assets/imagenes/tema1/imagen_t_1_12_2.png').col-12.col-md-6
+      img(src='@/assets/imagenes/tema1/imagen_t_1_12_3.png').col-12.col-md-6
 </template>
 
 <script>
@@ -278,6 +374,7 @@ export default {
   },
   data: () => ({
     // variables de vue
+    modal_t_11: false,
   }),
   mounted() {
     this.$nextTick(() => {
@@ -480,7 +577,6 @@ export default {
     max-width: 686px
     margin-left: auto
     margin-right: auto
-
   img
     margin-left: auto
     margin-right: auto
@@ -520,4 +616,100 @@ export default {
     p
       color: white
       padding: 2rem
+.container_t_1_9
+  position: relative
+  margin-left: -3rem
+  margin-right: -3rem
+  margin-bottom: 3rem
+  .decorator_t_1_9
+    width: 100%
+    max-width: 820px
+    position: absolute
+    bottom: -1rem
+    left: 50%
+    transform: translateX(-50%)
+    background-color: #FCEAB3
+    padding: 1.5rem 2rem
+    p
+      margin-bottom: 0
+    ::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      height: 8px
+      width: 24px
+      background-color: #FFCA28
+  @media (max-width: 768px)
+    margin-right: -1.5rem
+    margin-left: -1.5rem
+    .decorator_t_1_9
+      position: relative
+      bottom: 1rem
+.container_line_time_t_1_9
+  .linea-tiempo-d__item--selected
+    .tarjeta
+      background-color: #C9F1F6
+.container_t_1_10
+  background-image: url('../assets/imagenes/tema1/container-imagen_t_1_10.png')
+  background-repeat: no-repeat
+  margin-right: -3rem
+  margin-left: -3rem
+  margin-top: 12rem
+  img
+    max-width: 820px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    top: -9rem
+  p
+    position: relative
+    left: 3rem
+    bottom: 4rem
+  @media (max-width: 768px)
+    margin-right: -1.5rem
+    margin-left: -1.5rem
+    padding-right: 2rem
+    padding-left: 2rem
+    margin-top: 0
+    margin-bottom: 5rem
+    img
+      top: 0
+    p
+      bottom: -4rem
+      left: 0
+.img_t_1_12_1
+  max-width: 1030px
+  margin-right: auto
+  margin-left: auto
+  margin-bottom: 1.5rem
+.container_t_1_11
+  margin-right: -3rem
+  margin-left: -3rem
+  padding: 3rem
+  background-color: #E5F9FC
+  text-align: center
+  img
+    max-width: 945px
+    margin-right: auto
+    margin-left: auto
+  button
+    background-color: #039BE5
+    color: white
+    min-height: 58px
+    min-width: 189px
+    border-radius: 58px
+    font-weight: bold
+  @media (max-width: 768px)
+    margin-right: -1.5rem
+    margin-left: -1.5rem
+.modal_t_11
+  min-height: 220px
+  display: flex
+  align-items: center
+  p
+    max-width: 600px
+    margin-right: auto
+    margin-left: auto
+    text-align: justify
 </style>
