@@ -301,8 +301,20 @@
       br
       | Los Hooks son funciones JavaScript e imponen dos reglas:
     .container_t_1_10
-      img(src='@/assets/imagenes/tema1/imagen_t_1_10_1.png')
-      p.mb-0 Ejemplo de una función que utiliza el Hook useState
+      .container_cards_1_10
+        .col-12.d-none.d-md-flex
+          img(src="@/assets/imagenes/tema1/imagen_t_1_10.svg").pb-3
+        .col-12.col-md-6.mb-3.mb-md-0
+          .card_1_10.mx-auto.ms-md-auto.me-md-2
+            img(src="@/assets/imagenes/tema1/card_imagen_t_1_10_1.svg")
+            p Solo llamar Hooks en el nivel superior. No hay que llamar Hooks dentro de loops, condiciones o funciones anidadas.
+        .col-12.col-md-6
+          .card_1_10.mx-auto.me-md-auto.ms-md-2
+            img(src="@/assets/imagenes/tema1/card_imagen_t_1_10_1.svg")
+            p Solo llamar Hooks desde componentes de función de React. No hay que llamar Hooks desde las funciones regulares de JavaScript.
+        .col-12.d-none.d-md-flex
+          img(src="@/assets/imagenes/tema1/imagen_t_1_10_1.svg").pt-3
+    p.mt-3.mb-0 Ejemplo de una función que utiliza el Hook useState
     .d-flex.flex-wrap.mt-5
       img(src='@/assets/imagenes/tema1/imagen_t_1_10_2.png').col-12.col-md-6.px-0.order-2.order-md-1
       img(src='@/assets/imagenes/tema1/imagen_t_1_10_3.png').col-12.col-md-6.px-0.order-1.order-md-2
@@ -666,18 +678,50 @@ export default {
     position: relative
     left: 3rem
     bottom: 4rem
+  .container_cards_1_10
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    align-items: stretch
+    height: 100%
+    position: relative
+    top: -8rem
+    img
+      max-width: 247px
+      position: relative
+      top: 0
+      left: 0
+      bottom: 0
+    .card_1_10
+      max-width: 400px
+      background-color: #1565C0
+      padding: 2rem 3rem
+      border-radius: 46px
+      height: 100%
+      img
+        max-width: 140px
+        position: relative !important
+        top: 0
+        margin-bottom: 3rem
+      p
+        position: relative
+        left: 0
+        bottom: 0
+        margin-bottom: 0
+        color: white
   @media (max-width: 768px)
     margin-right: -1.5rem
     margin-left: -1.5rem
     padding-right: 2rem
     padding-left: 2rem
-    margin-top: 0
     margin-bottom: 5rem
     img
       top: 0
     p
       bottom: -4rem
       left: 0
+    .container_cards_1_10
+      top: -3rem
 .img_t_1_12_1
   max-width: 1030px
   margin-right: auto
