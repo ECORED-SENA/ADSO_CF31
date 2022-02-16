@@ -272,7 +272,7 @@
     //- Tema 1.9
     .titulo-segundo.color-acento-contenido.my-5
       h2#t_1_9 1.9 Concepto de clases en React
-    p.mb-4.mb-md-0 Las clases son otra forma de definir un componente en React se caracterizan por tener propiedades y a diferencia de las funciones pueden definir estados propios sin utilizar el concepto de Hook; dentro de los componentes de clase existe una función constructora que se utiliza para definir el estado inicial del componente. Es muy importante llamar a la función super() dentro del constructor para que los parámetros funcionen adecuadamente, como puede verse en la siguiente imagen:
+    p.mb-5 Las clases son otra forma de definir un componente en React se caracterizan por tener propiedades y a diferencia de las funciones pueden definir estados propios sin utilizar el concepto de Hook; dentro de los componentes de clase existe una función constructora que se utiliza para definir el estado inicial del componente. Es muy importante llamar a la función super() dentro del constructor para que los parámetros funcionen adecuadamente, como puede verse en la siguiente imagen:
     div.container_t_1_9
       img(src='@/assets/imagenes/tema1/imagen_t_1_9_1.png')
       .decorator_t_1_9
