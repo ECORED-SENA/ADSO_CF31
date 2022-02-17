@@ -1,6 +1,6 @@
 export default {
   global: {
-    componenteFormativo: 'DESARROLLO DE FRONT-END CON REACT JS',
+    componenteFormativo: 'Desarrollo de Front-end con REACT JS',
     descripcionCurso:
       'El diseño de un sitio web corresponde a un componente fundamental en el proceso de creación de aplicaciones web, este componente está orientado a la comprensión de los conceptos más importantes que se deben tener en cuenta para la construcción del Front-End con la tecnología React JS.',
     imagenBannerPrincipal: require('@/assets/curso/banner-princiapal.png'),

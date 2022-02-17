@@ -74,7 +74,7 @@
 
     .container-imagen-t-1-2
       img(src='@/assets/imagenes/tema1/imagen_t_1_1.png', alt='')
-      p.bloque-text-t-1-2 Es una biblioteca JavaScript de código abierto, desarrollada por la multinacional Facebook para crear interfaces de usuario, es importante tener en cuenta que una biblioteca o librería, es un conjunto de funcionalidades ya construidas y que son re-utilizables siguiendo su sintaxis. Su principal objetivo además de facilitar el desarrollo de aplicaciones de una sola página, es ser sencillo, declarativo y fácil de combinar.
+      p(data-aos="fade-up" data-aos-delay="100").bloque-text-t-1-2 Es una biblioteca JavaScript de código abierto, desarrollada por la multinacional Facebook para crear interfaces de usuario, es importante tener en cuenta que una biblioteca o librería, es un conjunto de funcionalidades ya construidas y que son re-utilizables siguiendo su sintaxis. Su principal objetivo además de facilitar el desarrollo de aplicaciones de una sola página, es ser sencillo, declarativo y fácil de combinar.
     Separador
 
     //- Tema 1.2
@@ -85,7 +85,7 @@
       .bloque-texto-g__img(
         :style="{'background-image': `url(${require('@/assets/imagenes/tema1/imagen_t_1_2.png')})`}"
       )
-      .bloque-texto-g__texto.p-4
+      .bloque-texto-g__texto.p-4(data-aos="fade-left" data-aos-delay="100")
         p.mb-0 Su nombre viene de la composición de Java Script (JS) + XML = (JSX) y corresponde a la sintaxis propuesta en React JS para escribir elementos de interfaz web compuestos por Java Script + HTML, en donde el HTML sigue las normas de código bien formado XML.
         div.decorador-text
     Separador
@@ -143,28 +143,32 @@
     h3.mt-5 INSTALACIÓN SOBRE SISTEMA OPERATIVO WINDOWS
     p.pb-5 Una vez comprobada que la versión instalada en el punto anterior es v14.18.1 proceda a la instalación sobre el sistema operativo Windows.
 
-    AcordionA.mb-5(tipo="a").container_acordeon_t_1_3
-      .row(titulo="Paso 1")
-        .content_acordeon
+    TabsB.color-acento-contenido.mb-5.pestanasb_t_1_3
+      .py-4.py-md-5(titulo="Paso" :icono="require('@/assets/imagenes/tema1/icono_t_1_3_01.svg')")
+        .row
+          .content_acordeon
           p Ingrese a  Node >= 14.0.0 and npm >= 5.6  que corresponde a la página oficial de nodejs https://nodejs.org/en/ y descargue la versión para windows de 64 bits.
-          img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_1.png').pb-4
-      .row(titulo="Paso 2")
-        .content_acordeon
-          p Descargue en el sitio de su preferencia
-          img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_2.png').pb-4
-      .row(titulo="Paso 3")
-        .content_acordeon
-          p Ejecute el archivo descargado como administrador de windows y continúe el wizard haciendo clic en next en cada pantalla.
-          .d-flex.flex-wrap.mb-2
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_3.png').col-12.col-md-6.p-2
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_4.png').col-12.col-md-6.p-2
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_5.png').col-12.col-md-6.p-2
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_6.png').col-12.col-md-6.p-2
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_7.png').col-12.col-md-6.p-2.mx-auto
-      .row(titulo="Paso 4")
-        .content_acordeon
-          p Por último de clic en finish para terminar la instalación.
-          img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_8.png').col-12.col-md-7.pb-4
+          img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_1.png').pb-4.mx-auto.mt-3(style="max-width: 1000px")
+      .py-4.py-md-5(titulo="Paso" :icono="require('@/assets/imagenes/tema1/icono_t_1_3_02.svg')")
+        .row
+          .content_acordeon
+            p Descargue en el sitio de su preferencia
+            img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_2.png').pb-4.mx-auto.mt-3(style="max-width: 1000px")
+      .py-4.py-md-5(titulo="Paso" :icono="require('@/assets/imagenes/tema1/icono_t_1_3_03.svg')")
+        .row
+          .content_acordeon
+            p Ejecute el archivo descargado como administrador de windows y continúe el wizard haciendo clic en next en cada pantalla.
+            .d-flex.flex-wrap.mb-2
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_3.png').col-12.col-md-6.p-2.ms-auto(style="max-width: 500px")
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_4.png').col-12.col-md-6.p-2.me-auto(style="max-width: 500px")
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_5.png').col-12.col-md-6.p-2.ms-auto(style="max-width: 500px")
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_6.png').col-12.col-md-6.p-2.me-auto(style="max-width: 500px")
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_7.png').col-12.col-md-6.p-2.mx-auto(style="max-width: 500px")
+      .py-4.py-md-5(titulo="Paso" :icono="require('@/assets/imagenes/tema1/icono_t_1_3_04.svg')")
+        .row
+          .content_acordeon
+            p Por último de clic en finish para terminar la instalación.
+            img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_8.png').col-12.col-md-7.pb-4.me-auto(style="max-width: 500px")
 
     //- Tema 1.4
     .titulo-segundo.color-acento-contenido.my-5
@@ -172,7 +176,7 @@
     div.d-flex.flex-wrap
       .col-12.col-md-6.order-2.order-md-1
         p Una vez llevado a cabo el proceso de instalación del paso anterior de node y npm, se puede crear el proyecto React e ir ejecutando los siguientes comandos:
-        div.container-commands-t_1_4
+        div(data-aos="fade-right" data-aos-delay="200").container-commands-t_1_4
           p 1. npx create-react-app my-app 
             br
             | 2. cd my-app
@@ -226,9 +230,9 @@
       p Ejemplo de un componente denominado Bienvenido que recibe una propiedad y devuelve un párrafo de saludo.
       img(src='@/assets/imagenes/tema1/imagen_t_1_5_img_1.png').img-primary
       .col-12.col-md-10.d-flex.flex-wrap.mx-auto
-        .col-12.col-md-6.bg-container-t_1_5
+        .col-12.col-md-6.bg-container-t_1_5(data-aos="fade-right" data-aos-delay="300")
           p Además, a un componente se le puede aplicar el concepto de estado en donde este, se define como la capacidad de especificar variables que pueden cambiar su valor en el tiempo, convirtiéndose en un comportamiento interno del componente, estos componentes se definen con el nombre de clase con la palabra reservada class.
-        .col-12.col-md-6
+        .col-12.col-md-6(data-aos="fade-left" data-aos-delay="300")
           img(src='@/assets/imagenes/tema1/imagen_t_1_5_img_2.png')
       
       //- Tema 1.6
@@ -244,7 +248,7 @@
       h2#t_1_7 1.7 Listas y keys
     p.mb-5.pb-4 Las listas hacen referencia a un arreglo de datos, que bien puede ser un arreglo de objetos o de datos simples con carácteres, números, etc. Como toda lista en programación, React proporciona un método para extraer estos datos y mostrarlos en la página en la cual se está trabajando, a continuación se presenta cómo se hace:
     .container_t_1_7
-      ImagenInfograficaB.color-primario.mb-5.img-t_1_7
+      ImagenInfograficaB.color-acento-contenido.mb-5.img-t_1_7
         template(v-slot:imagen)
           figure
             img(src='@/assets/imagenes/tema1/imagen_t_1_7.png', alt='Pasos para crear un proyecto en Node js')
@@ -263,9 +267,9 @@
       h2#t_1_8 1.8 Formularios
 
     .col-12.container-t_1_8
-      .col-12.col-md-6
+      .col-12.col-md-6(data-aos="fade-right" data-aos-delay="200")
         img(src='@/assets/imagenes/tema1/imagen_t_1_5_img_2.png').mb-4.mb-md-0
-      .col-12.col-md-6.bg-container-t_1_8
+      .col-12.col-md-6.bg-container-t_1_8(data-aos="fade-left" data-aos-delay="200")
         p Además, a un componente se le puede aplicar el concepto de estado en donde este, se define como la capacidad de especificar variables que pueden cambiar su valor en el tiempo, convirtiéndose en un comportamiento interno del componente, estos componentes se definen con el nombre de clase con la palabra reservada class.
     Separador
 
@@ -280,18 +284,18 @@
     .row
       .col-12.col-md-7.mb-5.mb-md-0.container_line_time_t_1_9.order-2.order-md-1
         LineaTiempoD.color-primario
-          p.text-small(numero="1" titulo="Componentes ") Los componentes permiten separar la interfaz de usuario en piezas independientes, reutilizables y pensar en cada pieza de forma aislada.
+          p(numero="1" titulo="Componentes ") Los componentes permiten separar la interfaz de usuario en piezas independientes, reutilizables y pensar en cada pieza de forma aislada.
           
-          p.text-small(numero="2" titulo="React") React le permite definir componentes como clases o funciones. Los componentes definidos como clases actualmente proporcionan una serie de características extra 
+          p(numero="2" titulo="React") React le permite definir componentes como clases o funciones. Los componentes definidos como clases actualmente proporcionan una serie de características extra 
           
-          p.text-small(numero="3" titulo="La función super()") La función super() dentro del constructor, es un componente de React válido porque acepta un solo argumento de objeto “props” (que proviene de propiedades) con datos y devuelve un elemento de React. Llamamos a dichos componentes “funcionales” porque literalmente son funciones JavaScript.
+          p(numero="3" titulo="La función super()") La función super() dentro del constructor, es un componente de React válido porque acepta un solo argumento de objeto “props” (que proviene de propiedades) con datos y devuelve un elemento de React. Llamamos a dichos componentes “funcionales” porque literalmente son funciones JavaScript.
           
-          p.text-small(numero="4" titulo="Nombres de componentes") Comience siempre los nombres de componentes con una letra mayúscula.
+          p(numero="4" titulo="Nombres de componentes") Comience siempre los nombres de componentes con una letra mayúscula.
             br
             br
             | React trata los componentes que empiezan con letras minúsculas como etiquetas del DOM. Por ejemplo, < div /> representa una etiqueta div HTML pero < Welcome /> representa un componente y requiere que Welcome esté definido.
       .col-12.col-md-5.px-5.order-1.order-md-2
-        img(src='@/assets/imagenes/tema1/imagen_t_1_9_2.png').mb-4
+        img(src='@/assets/imagenes/tema1/imagen_t_1_9_2.png').mb-4(data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-bottom")
 
     //- Tema 1.10
     .titulo-segundo.color-acento-contenido.my-5
@@ -303,7 +307,7 @@
     .container_t_1_10
       .container_cards_1_10
         .col-12.d-none.d-md-flex
-          img(src="@/assets/imagenes/tema1/imagen_t_1_10.svg").pb-3
+          img(src="@/assets/imagenes/tema1/imagen_t_1_10.svg").pb-3(data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000")
         .col-12.col-md-6.mb-3.mb-md-0
           .card_1_10.mx-auto.ms-md-auto.me-md-2
             img(src="@/assets/imagenes/tema1/card_imagen_t_1_10_1.svg")
@@ -313,7 +317,7 @@
             img(src="@/assets/imagenes/tema1/card_imagen_t_1_10_1.svg")
             p Solo llamar Hooks desde componentes de función de React. No hay que llamar Hooks desde las funciones regulares de JavaScript.
         .col-12.d-none.d-md-flex
-          img(src="@/assets/imagenes/tema1/imagen_t_1_10_1.svg").pt-3
+          img(src="@/assets/imagenes/tema1/imagen_t_1_10_1.svg").pt-3(data-aos="flip-right" data-aos-delay="400" data-aos-duration="1000")
     p.mt-3.mb-0 Ejemplo de una función que utiliza el Hook useState
     .d-flex.flex-wrap.mt-5
       img(src='@/assets/imagenes/tema1/imagen_t_1_10_2.png').col-12.col-md-6.px-0.order-2.order-md-1
@@ -373,8 +377,8 @@
     img(src='@/assets/imagenes/tema1/imagen_t_1_12_1.png').img_t_1_12_1
     p Este comando genera la carpeta build con la versión compilada y minificada del proyecto React SPA (Single Page Aplication), a continuación, se observará cómo debe quedar la organización y registro de éste proceso.
     .d-flex.flex-wrap.mt-5
-      img(src='@/assets/imagenes/tema1/imagen_t_1_12_2.png').col-12.col-md-6
-      img(src='@/assets/imagenes/tema1/imagen_t_1_12_3.png').col-12.col-md-6
+      img(src='@/assets/imagenes/tema1/imagen_t_1_12_2.png').col-12.col-md-6(style="")
+      img(src='@/assets/imagenes/tema1/imagen_t_1_12_3.png').col-12.col-md-6.d-flex.my-auto(style="max-height: 610px")
 </template>
 
 <script>
@@ -422,8 +426,8 @@ export default {
     margin-bottom: .3rem
     margin-top: .3rem
   .slyder-f__btn .fas
-    width: 75px
-    height: 75px
+    width: 65px
+    height: 65px
     display: flex
     flex-wrap: wrap
     justify-content: center
@@ -431,7 +435,7 @@ export default {
     background-color: #ffa726
     color: white
     border-radius: 50%
-    font-size: 3rem
+    font-size: 2.5rem
   .color-acento-botones
     background-color: white
     box-shadow: 0 1px 3px 2px #dbdbdb
@@ -501,6 +505,13 @@ export default {
         margin-bottom: 3rem
       img
         max-width: 100%
+.pestanasb_t_1_3
+  .tabs-b__tab__icon
+    img
+      max-height: 50px
+  .tabs-b__tab__title
+    span
+      font-size: 1rem
 @media (max-width: 1200px)
   .bg-carousel-1,.carousel_t_1_3
     .slyder-f__btn

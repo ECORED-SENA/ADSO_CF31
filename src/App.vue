@@ -28,4 +28,8 @@ export default {
 }
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.banner-principal__img
+  img
+    max-width: 452px
+</style>
