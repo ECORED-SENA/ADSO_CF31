@@ -29,7 +29,18 @@ export default {
 </script>
 
 <style lang="sass">
+.seccion-principal
+  overflow-x: hidden
 .banner-principal__img
   img
     max-width: 452px
+.banner-principal__row
+  .banner-principal__info
+    @media (min-width: 1400px)
+      width: 50%
+.titulo-principal
+  .titulo-principal__numero
+    background-color: #ffa726
+    span
+      color: white
 </style>

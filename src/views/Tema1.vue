@@ -14,7 +14,9 @@
       .titulo-principal__numero
         span 1
       h1#t_1 Fundamentos de React JS
-    p.mb-5 React JS, es una nueva tecnología importante para la construcción de software en su componente Front-End, que requiere tener en cuenta algunas consideraciones, se pueden ver a continuación:
+    p.mb-5 React JS, es una nueva tecnología importante para la construcción de software en su componente 
+      em Front-End
+      | , que requiere tener en cuenta algunas consideraciones, se pueden ver a continuación:
 
     .row.justify-content-center.py-5.bg-carousel-1
       .col-12
@@ -45,7 +47,10 @@
               .col-8
                 img(src='@/assets/imagenes/tema1/imagen_t_1_carousel_img_4.svg' alt='AvatarTop')
             h2.text-center ¿Quién la creo?
-            p.text-center Fue creada por originalmente por Facebook, y hoy en día es una de las librerías más populares que existen para página web y Front-End.
+            p.text-center Fue creada por originalmente por Facebook, y hoy en día es una de las librerías más populares que existen para página 
+              em web 
+              | y 
+              em Front-End.
           
           .tarjeta.color-acento-botones.p-4.h-100
             .row.justify-content-center.mb-3
@@ -66,7 +71,11 @@
               .col-8
                 img(src='@/assets/imagenes/tema1/imagen_t_1_carousel_img_7.svg' alt='AvatarTop')
             h2.text-center Antes de empezar
-            p.text-center Se recomienda tener conocimientos de Java Script, HTML y XML, para un mejor manejo de esta tecnología.
+            p.text-center Se recomienda tener conocimientos de 
+              em Java Script
+              | , 
+              em HTML y XML
+              | , para un mejor manejo de esta tecnología.
 
     //- Tema 1.1
     .titulo-segundo.color-acento-contenido.my-5
@@ -74,7 +83,9 @@
 
     .container-imagen-t-1-2
       img(src='@/assets/imagenes/tema1/imagen_t_1_1.png', alt='')
-      p(data-aos="fade-up" data-aos-delay="100").bloque-text-t-1-2 Es una biblioteca JavaScript de código abierto, desarrollada por la multinacional Facebook para crear interfaces de usuario, es importante tener en cuenta que una biblioteca o librería, es un conjunto de funcionalidades ya construidas y que son re-utilizables siguiendo su sintaxis. Su principal objetivo además de facilitar el desarrollo de aplicaciones de una sola página, es ser sencillo, declarativo y fácil de combinar.
+      p(data-aos="fade-up" data-aos-delay="100").bloque-text-t-1-2 Es una biblioteca 
+        em JavaScript 
+        | de código abierto, desarrollada por la multinacional Facebook para crear interfaces de usuario, es importante tener en cuenta que una biblioteca o librería, es un conjunto de funcionalidades ya construidas y que son re-utilizables siguiendo su sintaxis. Su principal objetivo además de facilitar el desarrollo de aplicaciones de una sola página, es ser sencillo, declarativo y fácil de combinar.
     Separador
 
     //- Tema 1.2
@@ -86,7 +97,20 @@
         :style="{'background-image': `url(${require('@/assets/imagenes/tema1/imagen_t_1_2.png')})`}"
       )
       .bloque-texto-g__texto.p-4(data-aos="fade-left" data-aos-delay="100")
-        p.mb-0 Su nombre viene de la composición de Java Script (JS) + XML = (JSX) y corresponde a la sintaxis propuesta en React JS para escribir elementos de interfaz web compuestos por Java Script + HTML, en donde el HTML sigue las normas de código bien formado XML.
+        p.mb-0 Su nombre viene de la composición de 
+          em Java Script (JS) 
+          | + 
+          em XML 
+          | = 
+          em (JSX) 
+          | y corresponde a la sintaxis propuesta en React JS para escribir elementos de interfaz web compuestos por 
+          em Java Script 
+          | + 
+          em HTML
+          |, en donde el 
+          em HTML 
+          |sigue las normas de código bien formado 
+          em XML.
         div.decorador-text
     Separador
 
@@ -97,7 +121,9 @@
 
       div.container-imagen-t-1-4
         div.col-12.col-md-6.pe-4
-          p Las siguientes instrucciones muestran el proceso de instalación para sistemas operativos Linux versión  Ubuntu 20.04.3 LTS y Windows, en ambos casos, en primer lugar se necesita instalar el servidor denominado Node  y el manejador de paquetes npm para esto se puede empezar haciendo clic en el siguiente link  Node >= 14.0.0 and npm >= 5.6 o puede acceder mediante el enlace https://nodejs.org/en/ a la fecha la versión Node recomendada es 14.1.18 LTS la cual presenta soporte por largo tiempo.
+          p Las siguientes instrucciones muestran el proceso de instalación para sistemas operativos Linux versión  Ubuntu 20.04.3 LTS y Windows, en ambos casos, en primer lugar se necesita instalar el servidor denominado Node  y el manejador de paquetes npm para esto se puede empezar haciendo clic en el siguiente link  Node >= 14.0.0 and npm >= 5.6 o puede acceder mediante el enlace
+            a(href="https://nodejs.org/en/" target="_blank").ps-1 https://nodejs.org/en/
+            | a la fecha la versión Node recomendada es 14.1.18 LTS la cual presenta soporte por largo tiempo.
           br
           br
           p.pb-4 A continuación, seguir los siguientes pasos de Instalación sobre Linux Ubuntu 20.04.3 LTS.
@@ -110,7 +136,8 @@
         SlyderF(columnas="col-12").col-11.mt-5.mx-auto.carousel_t_1_3
           div.item-carousel_t_1_3
             img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_1.png')
-            p Ingrese a  Node >= 14.0.0 and npm >= 5.6 que corresponde a la página oficial de nodejs  https://nodejs.org/en/
+            p Ingrese a  Node >= 14.0.0 and npm >= 5.6 que corresponde a la página oficial de nodejs
+              a(href="https://nodejs.org/en/" target="_blank").ps-1 https://nodejs.org/en/
           div.item-carousel_t_1_3
             img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_2.png')
             p Ingrese a la pestaña DOWNLOADS. 
@@ -131,14 +158,21 @@
             p Desde línea de comandos ubuntu ingrese las siguientes instrucciones.
           div.item-carousel_t_1_3
             img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_8.png')
-            p A ejecutar curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+            p A ejecutar curl -fsSL 
+              a(href="https://deb.nodesource.com/setup_14.x" target="_blank").pe-1 https://deb.nodesource.com/setup_14.x
+              | |
+              em.ps-1 sudo -E bash -
           div.item-carousel_t_1_3
             img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_9.png')
-            p Luego ejecute el comando sudo apt-get install -y nodejs
+            p Luego ejecute el comando 
+              em sudo apt-get install -y nodejs
           div.item-carousel_t_1_3
             img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_10.png')
-            p Finalmente compruebe la versión instalada v14.18.1 ejecutando el siguiente comando node –version
-      p.mt-5.pb-4 Una vez se ha comprobado que la versión instalada es v14.18.1 mediante el comando node –version, continuar con la instalación sobre el sistema operativo Windows, siguiendo los siguientes pasos:
+            p Finalmente compruebe la versión instalada v14.18.1 ejecutando el siguiente comando 
+             em node –version
+      p.mt-5.pb-4 Una vez se ha comprobado que la versión instalada es v14.18.1 mediante el comando 
+        em node –version
+        |, continuar con la instalación sobre el sistema operativo Windows, siguiendo los siguientes pasos:
 
     h3.mt-5 INSTALACIÓN SOBRE SISTEMA OPERATIVO WINDOWS
     p.pb-5 Una vez comprobada que la versión instalada en el punto anterior es v14.18.1 proceda a la instalación sobre el sistema operativo Windows.
@@ -147,7 +181,9 @@
       .py-4.py-md-5(titulo="Paso" :icono="require('@/assets/imagenes/tema1/icono_t_1_3_01.svg')")
         .row
           .content_acordeon
-          p Ingrese a  Node >= 14.0.0 and npm >= 5.6  que corresponde a la página oficial de nodejs https://nodejs.org/en/ y descargue la versión para windows de 64 bits.
+          p Ingrese a  Node >= 14.0.0 and npm >= 5.6  que corresponde a la página oficial de nodejs 
+            a(href="https://nodejs.org/en/" target="_blank") https://nodejs.org/en/ 
+            |y descargue la versión para windows de 64 bits.
           img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_1.png').pb-4.mx-auto.mt-3(style="max-width: 1000px")
       .py-4.py-md-5(titulo="Paso" :icono="require('@/assets/imagenes/tema1/icono_t_1_3_02.svg')")
         .row
@@ -157,7 +193,9 @@
       .py-4.py-md-5(titulo="Paso" :icono="require('@/assets/imagenes/tema1/icono_t_1_3_03.svg')")
         .row
           .content_acordeon
-            p Ejecute el archivo descargado como administrador de windows y continúe el wizard haciendo clic en next en cada pantalla.
+            p Ejecute el archivo descargado como administrador de windows y continúe el wizard haciendo clic en 
+              em next 
+              | en cada pantalla.
             .d-flex.flex-wrap.mb-2
               img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_3.png').col-12.col-md-6.p-2.ms-auto(style="max-width: 500px")
               img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_4.png').col-12.col-md-6.p-2.me-auto(style="max-width: 500px")
@@ -167,7 +205,9 @@
       .py-4.py-md-5(titulo="Paso" :icono="require('@/assets/imagenes/tema1/icono_t_1_3_04.svg')")
         .row
           .content_acordeon
-            p Por último de clic en finish para terminar la instalación.
+            p Por último de clic en 
+            em finish 
+            | para terminar la instalación.
             img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_8.png').col-12.col-md-7.pb-4.me-auto(style="max-width: 500px")
 
     //- Tema 1.4
@@ -177,11 +217,14 @@
       .col-12.col-md-6.order-2.order-md-1
         p Una vez llevado a cabo el proceso de instalación del paso anterior de node y npm, se puede crear el proyecto React e ir ejecutando los siguientes comandos:
         div(data-aos="fade-right" data-aos-delay="200").container-commands-t_1_4
-          p 1. npx create-react-app my-app 
+          p 1. 
+            em npx create-react-app my-app 
             br
-            | 2. cd my-app
+            | 2. 
+            em cd my-app
             br
-            | 3. npm start
+            | 3. 
+            em npm start
         p Iniciar a la creación del proyecto, mediante la siguiente secuencia:
       .col-12.col-md-6.order-1.order-md-2
         img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_1.png').mb-4.ps-0.ps-md-3
@@ -192,12 +235,15 @@
 
       div(x="11%" y="48%" tooltip="Crear un comando ubuntu" numero="1")
         h5 Crear un comando ubuntu
-        p Desde línea de comando Ubuntu ejecute npx create-react-app my-app
+        p Desde línea de comando Ubuntu ejecute 
+          em npx create-react-app my-app
         img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_interactive_1.png')
 
       div(x="26.2%" y="76%" tooltip="Ejecución de npx create-react-app my-app" numero="2")
-        h5 Ejecución de npx create-react-app my-app
-        p Una vez el sistema termine la ejecución del paso anterior ejecute cd my-app 
+        h5 Ejecución de 
+          em npx create-react-app my-app
+        p Una vez el sistema termine la ejecución del paso anterior ejecute 
+          em cd my-app 
         img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_interactive_2.png')
       
       div(x="42%" y="48%" tooltip="Ejecute npm start para lanzar el proyecto" numero="3")
@@ -216,8 +262,10 @@
         img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_interactive_5.png')
       
       div(x="89%" y="76%" tooltip="Ejecute npx create-react-app my-app" numero="6")
-        h5 Ejecute npx create-react-app my-app
-        p Desde línea de comando Windows ejecute npx create-react-app my-app
+        h5 Ejecute 
+          em npx create-react-app my-app
+        p Desde línea de comando Windows ejecute 
+          em npx create-react-app my-app
         img(src='@/assets/imagenes/tema1/imagen_t_1_4_img_interactive_6.png')
 
     //- Tema 1.5 y Tema 1.6
@@ -225,7 +273,9 @@
       //- Tema 1.5
       .titulo-segundo.color-acento-contenido.my-5
         h2#t_1_5 1.5 Propiedades y Estados de los Componentes
-      p Un componente en React hace referencia a la posibilidad de definir de manera independiente una funcionalidad que puede ser re-utilizable dentro del sistema, en esencia estas funcionalidades se escriben a manera de funciones JavaScript que reciben unas entradas que se denominan propiedades y devuelven una forma de visualización. 
+      p Un componente en React hace referencia a la posibilidad de definir de manera independiente una funcionalidad que puede ser re-utilizable dentro del sistema, en esencia estas funcionalidades se escriben a manera de funciones 
+        em JavaScript 
+        | que reciben unas entradas que se denominan propiedades y devuelven una forma de visualización. 
       br
       p Ejemplo de un componente denominado Bienvenido que recibe una propiedad y devuelve un párrafo de saludo.
       img(src='@/assets/imagenes/tema1/imagen_t_1_5_img_1.png').img-primary
@@ -254,11 +304,12 @@
             img(src='@/assets/imagenes/tema1/imagen_t_1_7.png', alt='Pasos para crear un proyecto en Node js')
 
         div(x="10%" y="75%" tooltip="Listas y keys JS" numero="").content-infografia_t_1_7
-          p En React es necesario pasar arreglos de datos a listas para el manejo de algunos componentes lo cual se trabaja con la función map de la siguiente manera en donde se devuelve un elemento < li > por cada número.
+          p En React es necesario pasar arreglos de datos a listas para el manejo de algunos componentes lo cual se trabaja con la función map de la siguiente manera en donde se devuelve un elemento &#60;li&#62; por cada número.
           img(src='@/assets/imagenes/tema1/imagen_t_1_7_img_interactive_1.png')
 
         div(x="90%" y="75%" tooltip="Listas y keys JSX" numero="").content-infografia_t_1_7
-          p Adicional al manejo de listas es muy importante tener en cuenta el identificador único de componentes para evitar errores en el DOM por lo tanto es necesario manejar el atributo key.
+          p Adicional al manejo de listas es muy importante tener en cuenta el identificador único de componentes para evitar errores en el DOM por lo tanto es necesario manejar el atributo 
+            em key.
           img(src='@/assets/imagenes/tema1/imagen_t_1_7_img_interactive_2.png')
     Separador
 
@@ -270,7 +321,8 @@
       .col-12.col-md-6(data-aos="fade-right" data-aos-delay="200")
         img(src='@/assets/imagenes/tema1/imagen_t_1_5_img_2.png').mb-4.mb-md-0
       .col-12.col-md-6.bg-container-t_1_8(data-aos="fade-left" data-aos-delay="200")
-        p Además, a un componente se le puede aplicar el concepto de estado en donde este, se define como la capacidad de especificar variables que pueden cambiar su valor en el tiempo, convirtiéndose en un comportamiento interno del componente, estos componentes se definen con el nombre de clase con la palabra reservada class.
+        p En React el envío de formularios se comporta como en HTML, solo que aquí, el ingreso y cambio de valores en las entradas se deben manejar con componentes controlados por medio de estados.
+
     Separador
 
     //- Tema 1.9
@@ -286,14 +338,19 @@
         LineaTiempoD.color-primario
           p(numero="1" titulo="Componentes ") Los componentes permiten separar la interfaz de usuario en piezas independientes, reutilizables y pensar en cada pieza de forma aislada.
           
-          p(numero="2" titulo="React") React le permite definir componentes como clases o funciones. Los componentes definidos como clases actualmente proporcionan una serie de características extra 
+          p(numero="2" titulo="React") React le permite definir componentes como clases o funciones. Los componentes definidos como clases actualmente proporcionan una serie de características extra.
           
-          p(numero="3" titulo="La función super()") La función super() dentro del constructor, es un componente de React válido porque acepta un solo argumento de objeto “props” (que proviene de propiedades) con datos y devuelve un elemento de React. Llamamos a dichos componentes “funcionales” porque literalmente son funciones JavaScript.
+          p(numero="3" titulo="La función super()") La función super() dentro del constructor, es un componente de React válido porque acepta un solo argumento de objeto “
+            em props
+            | ” (que proviene de propiedades) con datos y devuelve un elemento de React. Llamamos a dichos componentes “funcionales” porque literalmente son funciones 
+            em JavaScript.
           
           p(numero="4" titulo="Nombres de componentes") Comience siempre los nombres de componentes con una letra mayúscula.
             br
             br
-            | React trata los componentes que empiezan con letras minúsculas como etiquetas del DOM. Por ejemplo, < div /> representa una etiqueta div HTML pero < Welcome /> representa un componente y requiere que Welcome esté definido.
+            | React trata los componentes que empiezan con letras minúsculas como etiquetas del DOM. Por ejemplo, &#61;div/&#62; representa una etiqueta div 
+            em HTML 
+            | pero &#61;Welcome/&#62; representa un componente y requiere que Welcome esté definido.
       .col-12.col-md-5.px-5.order-1.order-md-2
         img(src='@/assets/imagenes/tema1/imagen_t_1_9_2.png').mb-4(data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-bottom")
 
@@ -303,7 +360,11 @@
     p Es el concepto que permite darle a los componentes definidos por medio de funciones manejo de variables de estado locales, así como lo hacen las clases.
       br
       br
-      | Los Hooks son funciones JavaScript e imponen dos reglas:
+      | Los 
+      em Hooks 
+      |son funciones 
+      em JavaScript 
+      | e imponen dos reglas:
     .container_t_1_10
       .container_cards_1_10
         .col-12.d-none.d-md-flex
@@ -311,14 +372,26 @@
         .col-12.col-md-6.mb-3.mb-md-0
           .card_1_10.mx-auto.ms-md-auto.me-md-2
             img(src="@/assets/imagenes/tema1/card_imagen_t_1_10_1.svg")
-            p Solo llamar Hooks en el nivel superior. No hay que llamar Hooks dentro de loops, condiciones o funciones anidadas.
+            p Solo llamar 
+              em Hooks 
+              | en el nivel superior. No hay que llamar 
+              em Hooks 
+              | dentro de 
+              em loops
+              |, condiciones o funciones anidadas.
         .col-12.col-md-6
           .card_1_10.mx-auto.me-md-auto.ms-md-2
             img(src="@/assets/imagenes/tema1/card_imagen_t_1_10_1.svg")
-            p Solo llamar Hooks desde componentes de función de React. No hay que llamar Hooks desde las funciones regulares de JavaScript.
+            p Solo llamar 
+              em Hooks 
+              | desde componentes de función de React. No hay que llamar 
+              em Hooks 
+              | desde las funciones regulares de 
+              em JavaScript.
         .col-12.d-none.d-md-flex
           img(src="@/assets/imagenes/tema1/imagen_t_1_10_1.svg").pt-3(data-aos="flip-right" data-aos-delay="400" data-aos-duration="1000")
-    p.mt-3.mb-0 Ejemplo de una función que utiliza el Hook useState
+    p.mt-3.mb-0 Ejemplo de una función que utiliza el 
+      em Hook useState
     .d-flex.flex-wrap.mt-5
       img(src='@/assets/imagenes/tema1/imagen_t_1_10_2.png').col-12.col-md-6.px-0.order-2.order-md-1
       img(src='@/assets/imagenes/tema1/imagen_t_1_10_3.png').col-12.col-md-6.px-0.order-1.order-md-2
@@ -328,6 +401,7 @@
     .titulo-segundo.color-acento-contenido.my-5
       h2#t_1_11 1.11 Ciclos de Vida de los Componentes de React
 
+    p.mb-5 Hace referencia a los métodos que se pueden utilizar por defecto (es decir hacen parte de la librería de React) cuando se ejecuta o se renderiza en la línea de tiempo de ejecución del programa un componente estos métodos son:
     .tabla-b.color-acento-contenido.mb-5
       .tabla-b__header
         p.mb-0 Métodos de ciclo de vida de React
@@ -339,25 +413,32 @@
         tbody
           tr
           tr
-            td componentWillMount()
+            td
+              em componentWillMount()
             td Se ejecuta justo antes del primer pintado del componente.
           tr
-            td componentDidMount()
+            td 
+              em componentDidMount()
             td Se ejecuta después del primer pintado del componente.
           tr
-            td componentWillReceiveProps(nextProps)
+            td 
+              em componentWillReceiveProps(nextProps)
             td Se invoca cuando las propiedades se van a actualizar.
           tr
-            td shouldComponentUpdate(nextProps, nextState)
+            td 
+              em shouldComponentUpdate(nextProps, nextState)
             td Se invocará cuando se producen cambios de propiedades o cambios de estado.
           tr
-            td componentWillUpdate(nextProps, nextState)
+            td 
+              em componentWillUpdate(nextProps, nextState)
             td Este se invocará justo antes de que el componente vaya a actualizar su vista.
           tr
-            td componentDidUpdate(prevProps, prevState)
+            td 
+              em componentDidUpdate(prevProps, prevState)
             td Este se invocará justo después de que el componente vaya a actualizar su vista.
           tr
-            td componentWillUnmount()
+            td 
+              em componentWillUnmount()
             td Se ejecuta en el momento que el componente se va a retirar del DOM.
 
     p.py-4 Se puede observar en la siguiente imagen cómo quedará el archivo:
@@ -367,15 +448,20 @@
     ModalA(:abrir-modal.sync="modal_t_11")
       .row.align-items-center
         .col-12.modal_t_11
-          p En React.js los componentes que no sean puros (todos los que se crean mediante clases o React.createClass) poseen algo conocido como el ciclo de vida. Este ciclo de vida, son una serie de funciones que se ejecutan en distintos momentos de la vida del componente y nos permiten realizar distintas acciones en estos momentos.
+          p En React.js los componentes que no sean puros (todos los que se crean mediante clases o 
+            em React.createClass
+            |) poseen algo conocido como el ciclo de vida. Este ciclo de vida, son una serie de funciones que se ejecutan en distintos momentos de la vida del componente y nos permiten realizar distintas acciones en estos momentos.
     p.pt-5 Las utilidades del método de ciclo de vida de React, pueden ser detalladas a continuación: 
 
     //- Tema 1.12
     .titulo-segundo.color-acento-contenido.my-5
       h2#t_1_12 1.12 Ejecutar la aplicación
-    p.mb-5 Para ejecutar una aplicación React JS, se usa el comando npm start y para generar la versión de producción se debe ejecutar el siguiente comando npm run build.
+    p.mb-5 Para ejecutar una aplicación React JS, se usa el comando npm start y para generar la versión de producción se debe ejecutar el siguiente comando 
+      em npm run build.
     img(src='@/assets/imagenes/tema1/imagen_t_1_12_1.png').img_t_1_12_1
-    p Este comando genera la carpeta build con la versión compilada y minificada del proyecto React SPA (Single Page Aplication), a continuación, se observará cómo debe quedar la organización y registro de éste proceso.
+    p Este comando genera la carpeta build con la versión compilada y minificada del proyecto React SPA (
+      em Single Page Aplication
+      | ), a continuación, se observará cómo debe quedar la organización y registro de éste proceso.
     .d-flex.flex-wrap.mt-5
       img(src='@/assets/imagenes/tema1/imagen_t_1_12_2.png').col-12.col-md-6(style="")
       img(src='@/assets/imagenes/tema1/imagen_t_1_12_3.png').col-12.col-md-6.d-flex.my-auto(style="max-height: 610px")
@@ -403,6 +489,8 @@ export default {
 }
 </script>
 <style lang="sass">
+.curso-main-container
+  overflow-x: hidden
 .span-decorator
   position: relative
 .span-decorator::after
@@ -755,6 +843,10 @@ export default {
     min-width: 189px
     border-radius: 58px
     font-weight: bold
+    transform: scale(1)
+    transition: all .2s linear
+    &:hover
+      transform: scale(1.05)
   @media (max-width: 768px)
     margin-right: -1.5rem
     margin-left: -1.5rem
