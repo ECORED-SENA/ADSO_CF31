@@ -18,7 +18,8 @@
       em Front-End
       | , que requiere tener en cuenta algunas consideraciones, se pueden ver a continuación:
 
-    .row.justify-content-center.py-5.bg-carousel-1
+    .row.justify-content-center.py-5.bg-carousel-1.indicador-carousel.indicador__container(@mouseover="indicadort1 = false")
+      .indicador--click(v-if="indicadort1")
       .col-12
         SlyderF(columnas="col-12 col-xl-4")
           .tarjeta.color-acento-botones.p-4.h-100
@@ -121,7 +122,10 @@
 
       div.container-imagen-t-1-4
         div.col-12.col-md-6.pe-4
-          p Las siguientes instrucciones muestran el proceso de instalación para sistemas operativos Linux versión  Ubuntu 20.04.3 LTS y Windows, en ambos casos, en primer lugar se necesita instalar el servidor denominado Node  y el manejador de paquetes npm para esto se puede empezar haciendo clic en el siguiente link  Node >= 14.0.0 and npm >= 5.6 o puede acceder mediante el enlace
+          p Las siguientes instrucciones muestran el proceso de instalación para sistemas operativos Linux versión  Ubuntu 20.04.3 LTS y Windows, en ambos casos, en primer lugar se necesita instalar el servidor denominado Node  y el manejador de paquetes npm para esto se puede empezar haciendo clic en el siguiente link  
+            br
+            a(href="https://nodejs.org/en/" target="_blank") Node >= 14.0.0 and npm >= 5.6 
+            | o puede acceder mediante el enlace
             a(href="https://nodejs.org/en/" target="_blank").ps-1 https://nodejs.org/en/
             | a la fecha la versión Node recomendada es 14.1.18 LTS la cual presenta soporte por largo tiempo.
           br
@@ -133,43 +137,45 @@
         h3.mt-4 INSTALANDO REACT JS
 
         p.w-100 Siga los siguientes pasos de Instalación sobre Linux Ubuntu 20.04.3 LTS.
-        SlyderF(columnas="col-12").col-11.mt-5.mx-auto.carousel_t_1_3
-          div.item-carousel_t_1_3
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_1.png')
-            p Ingrese a  Node >= 14.0.0 and npm >= 5.6 que corresponde a la página oficial de nodejs
-              a(href="https://nodejs.org/en/" target="_blank").ps-1 https://nodejs.org/en/
-          div.item-carousel_t_1_3
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_2.png')
-            p Ingrese a la pestaña DOWNLOADS. 
-          div.item-carousel_t_1_3
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_3.png')
-            p Ingrese a la opción Installing Node.js via package manager 
-          div.item-carousel_t_1_3
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_4.png')
-            p Ingrese a la opción Debian and Ubuntu based Linux distributions
-          div.item-carousel_t_1_3
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_5.png')
-            p Ingrese a la opción Node.js binary distributions
-          div.item-carousel_t_1_3
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_6.png')
-            p Ingrese a la opción Installation instructions  se encuentra al final de la página , vaya hasta encontrar node js.v14.x
-          div.item-carousel_t_1_3
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_7.png')
-            p Desde línea de comandos ubuntu ingrese las siguientes instrucciones.
-          div.item-carousel_t_1_3
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_8.png')
-            p A ejecutar curl -fsSL 
-              a(href="https://deb.nodesource.com/setup_14.x" target="_blank").pe-1 https://deb.nodesource.com/setup_14.x
-              | |
-              em.ps-1 sudo -E bash -
-          div.item-carousel_t_1_3
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_9.png')
-            p Luego ejecute el comando 
-              em sudo apt-get install -y nodejs
-          div.item-carousel_t_1_3
-            img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_10.png')
-            p Finalmente compruebe la versión instalada v14.18.1 ejecutando el siguiente comando 
-             em node –version
+        .col-12.indicador-carousel.indicador__container(@mouseover="indicadort3 = false")
+          .indicador--click(v-if="indicadort3" style="left: 93%; top: 53%")
+          SlyderF(columnas="col-12").col-11.mt-5.mx-auto.carousel_t_1_3
+            div.item-carousel_t_1_3
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_1.png')
+              p Ingrese a  Node >= 14.0.0 and npm >= 5.6 que corresponde a la página oficial de nodejs
+                a(href="https://nodejs.org/en/" target="_blank").ps-1 https://nodejs.org/en/
+            div.item-carousel_t_1_3
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_2.png')
+              p Ingrese a la pestaña DOWNLOADS. 
+            div.item-carousel_t_1_3
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_3.png')
+              p Ingrese a la opción Installing Node.js via package manager 
+            div.item-carousel_t_1_3
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_4.png')
+              p Ingrese a la opción Debian and Ubuntu based Linux distributions
+            div.item-carousel_t_1_3
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_5.png')
+              p Ingrese a la opción Node.js binary distributions
+            div.item-carousel_t_1_3
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_6.png')
+              p Ingrese a la opción Installation instructions  se encuentra al final de la página , vaya hasta encontrar node js.v14.x
+            div.item-carousel_t_1_3
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_7.png')
+              p Desde línea de comandos ubuntu ingrese las siguientes instrucciones.
+            div.item-carousel_t_1_3
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_8.png')
+              p A ejecutar curl -fsSL 
+                a(href="https://deb.nodesource.com/setup_14.x" target="_blank").pe-1 https://deb.nodesource.com/setup_14.x
+                | |
+                em.ps-1 sudo -E bash -
+            div.item-carousel_t_1_3
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_9.png')
+              p Luego ejecute el comando 
+                em sudo apt-get install -y nodejs
+            div.item-carousel_t_1_3
+              img(src='@/assets/imagenes/tema1/imagen_t_1_3_carousel_10.png')
+              p Finalmente compruebe la versión instalada v14.18.1 ejecutando el siguiente comando 
+              em node –version
       p.mt-5.pb-4 Una vez se ha comprobado que la versión instalada es v14.18.1 mediante el comando 
         em node –version
         |, continuar con la instalación sobre el sistema operativo Windows, siguiendo los siguientes pasos:
@@ -206,8 +212,8 @@
         .row
           .content_acordeon
             p Por último de clic en 
-            em finish 
-            | para terminar la instalación.
+              em finish 
+              | para terminar la instalación.
             img(src='@/assets/imagenes/tema1/imagen_t_1_3_acordeon_8.png').col-12.col-md-7.pb-4.me-auto(style="max-width: 500px")
 
     //- Tema 1.4
@@ -444,7 +450,9 @@
     p.py-4 Se puede observar en la siguiente imagen cómo quedará el archivo:
     .container_t_1_11
       img(src='@/assets/imagenes/tema1/imagen_t_1_11_1.png').mb-5
-      button(@click="modal_t_11 = true") ATENCIÓN
+      div.indicador__container
+        button(@click="modal_t_11 = true") ATENCIÓN
+        .indicador--click
     ModalA(:abrir-modal.sync="modal_t_11")
       .row.align-items-center
         .col-12.modal_t_11
@@ -462,9 +470,8 @@
     p Este comando genera la carpeta build con la versión compilada y minificada del proyecto React SPA (
       em Single Page Aplication
       | ), a continuación, se observará cómo debe quedar la organización y registro de éste proceso.
-    .d-flex.flex-wrap.mt-5
-      img(src='@/assets/imagenes/tema1/imagen_t_1_12_2.png').col-12.col-md-6(style="")
-      img(src='@/assets/imagenes/tema1/imagen_t_1_12_3.png').col-12.col-md-6.d-flex.my-auto(style="max-height: 610px")
+    .d-flex.flex-wrap.mt-5.container_t_1_10(style="background-position: bottom")
+      img(src='@/assets/imagenes/tema1/imagen_t_1_12_2.png').col-12.col-md-6(style="top: 0").mx-auto
 </template>
 
 <script>
@@ -477,6 +484,8 @@ export default {
   data: () => ({
     // variables de vue
     modal_t_11: false,
+    indicadort1: true,
+    indicadort3: true,
   }),
   mounted() {
     this.$nextTick(() => {
@@ -501,6 +510,9 @@ export default {
   left: 0
   height: 3px
   background: linear-gradient(red, transparent)
+.indicador-carousel
+  .indicador--click
+    left: 95%
 .bg-carousel-1,.carousel_t_1_3
   background-color: #ebf4fd
   position: relative
@@ -825,7 +837,7 @@ export default {
   max-width: 1030px
   margin-right: auto
   margin-left: auto
-  margin-bottom: 1.5rem
+  margin-bottom: 2rem
 .container_t_1_11
   margin-right: -3rem
   margin-left: -3rem

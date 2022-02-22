@@ -33,7 +33,10 @@ export default {
   overflow-x: hidden
 .banner-principal__img
   img
-    max-width: 452px
+    max-height: 334px
+    width: auto
+    margin-left: auto
+    margin-right: auto
 .banner-principal__row
   .banner-principal__info
     @media (min-width: 1400px)
