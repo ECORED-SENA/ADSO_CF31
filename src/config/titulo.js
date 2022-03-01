@@ -1,1 +1,1 @@
-module.exports = 'DESARROLLO DE FRONT-END CON REACT JS'
+module.exports = 'Desarrollo de Front-end con REACT JS'

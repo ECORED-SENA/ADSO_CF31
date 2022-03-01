@@ -47,7 +47,7 @@
             .row.justify-content-center.mb-3
               .col-8
                 img(src='@/assets/imagenes/tema1/imagen_t_1_carousel_img_4.svg' alt='AvatarTop')
-            h2.text-center ¿Quién la creo?
+            h2.text-center ¿Quién la creó?
             p.text-center Fue creada por originalmente por Facebook, y hoy en día es una de las librerías más populares que existen para página 
               em web 
               | y 

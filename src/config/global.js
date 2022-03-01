@@ -25,7 +25,7 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Fundamentos de Reac JS',
+        titulo: 'Fundamentos de React JS',
         desarrolloContenidos: true,
         subMenu: [
           {
